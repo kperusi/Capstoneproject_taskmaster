@@ -1,0 +1,243 @@
+.tasks-content {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 17px;
+}
+
+.todo-x,
+.inprogress-x,
+.completed-x {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(238, 238, 238);
+  padding: 10px;
+  border-radius: 5px;
+  gap: 10px;
+  /* justify-content: space-between; */
+  border: 1px solid rgb(228, 223, 223);
+  margin-bottom: 10px;
+  width: 40%;
+}
+
+.done {
+  background-color: red;
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.title-x {
+  display: flex;
+  gap: 10px;
+}
+.inprogress-cirlce {
+  background-color: rgb(17, 130, 182);
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.todo-cirlce {
+  background-color: rgb(40, 145, 14);
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.single-container{
+  font-style: normal;
+  font-weight: 100;
+}
+.single-task-x {
+  flex-direction: column;
+  position: absolute;
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  border: solid 1px blueviolet;
+  border-radius: 10px;
+  padding: 20px;
+  /* height: 100vh; */
+  gap: 20px;
+  text-align: center;
+  align-items: center;
+}
+.single-task-close-btn{
+  background-color: blueviolet;
+  border: 1px solid white;
+  border-top-left-radius: 17px;
+  border-bottom-right-radius: 17px;
+  padding: 13px 10px;
+  color: white;
+  width: 100px;
+  align-self: flex-end;
+}
+.single-task-x section {
+  /* display: flex; */
+  flex-direction: column;
+  background-color: rgb(247, 245, 246);
+  padding: 20px 0px 0px 0px;
+  gap: 10px;
+  width: 70%;
+  /* border-radius: 10px; */
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.single-title {
+  text-align: left;
+  padding: 20px;
+  font-size: 24px;
+  background-color: rgb(199, 199, 199);
+}
+
+.createdby-x {
+  display: flex;
+  background-color: blueviolet;
+  padding: 20px;
+  justify-content: space-between;
+  color: white;
+  font-size: 14px;
+  font-style: normal;
+}
+
+.desc-x p{
+  border-radius: 10px;
+  text-align: left;
+  padding: 0px 20px;
+  color: gray;
+}
+.desc-x textarea {
+  background-color: transparent;
+  padding: 0px 20px;
+  font-size: 14px;
+}
+.due-date-priority-titles-x,
+.due-date-priority {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 80px;
+  font-size: 14px;
+}
+.due-date-priority-titles-x{
+  margin-bottom: -40px;
+  color: gray;
+  font-weight: 100;
+  font-size: 12px;
+}
+.due-date-x h3,.priority-x h3,.status-x h3{
+color: rgb(177, 175, 175);
+}
+
+form input,
+textarea {
+  border: none;
+  outline: none;
+}
+.single-title-x {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 80px;
+}
+#single-title-input,
+#single-title-desc {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 24px;
+  padding: 20px;
+}
+
+.single-subtask-x {
+  /* border: solid; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 10px;
+  background-color: rgb(210, 197, 221);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.date-tag{
+  font-size: 14px;
+  
+}
+.h1 {
+  text-align: left;
+}
+
+
+
+.div3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding: 0px 20px;
+  /* border-radius: 5px; */
+  border: 1px solid rgb(231, 230, 230) !important;
+}
+.div, .edit-div {
+  display: flex;
+  padding: 10px 13px;
+  gap: 10px;
+  border: 1px solid rgb(231, 230, 230) !important;
+
+  border-radius: 5px;
+}
+.edit-title-input{
+  border: none !important;
+  outline: none !important;
+  background-color: transparent;
+  width: 100%;
+}
+
+.edit-title-input:hover{
+  border: 1px solid rgb(216, 215, 215)!important;
+cursor: pointer;
+  outline: 1px solid rgb(216, 215, 215) !important;
+}
+
+.del-edit-btn-x {
+  display: flex;
+  /* border: solid; */
+}
+.del-edit-btn-x button {
+  background-color: transparent !important;
+  border: none !important;
+  color: #ffffff;
+  padding: 5px !important;
+  width: 35px !important;
+
+
+}
+
+.del-edit-btn-x button:hover {
+  cursor: pointer;
+  width: 40px !important;
+}
+
+.completed-subtask{
+  text-decoration: line-through;
+  color: rgb(245, 96, 96);
+}
+.subtask-del-btn{
+  align-self: flex-end;
+
+  background-color: transparent;
+  border: none;
+}
+.single-subtask-div{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  
+}
+.subtask-title{
+  width: 90%;
+  text-align: left;
+}

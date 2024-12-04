@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMaster</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <link rel="stylesheet" href="/css/todostyle.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="/js/index.js" defer></script>
+</head>
+
+<body>
+
+    <main class="container" id="app">
+        <!-- Login Page -->
+
+        <section id="login-page" class="page">
+
+            <main class="home-main">
+                <section class="home-tool-bar-x">
+                    <div class="tool-bar-x">
+                        <div class="logo-x">
+                            <h1 class="logo">TASKMASTER</h1>
+                            <p>...Orgainizing your day</p>
+                        </div>
+
+                        <div class="login-btn-x">
+                            <button class="login-btn" id="showLogin">Login</button>
+                            <a class="sign-up-btn" id='showRegister'> Start for free</a>
+                        </div>
+
+                    </div>
+                    <div class="hero-x">
+                        <h1 class="hero">Organize Your Day-to-Day,</h1>
+                        <h1>Manage Tasks with <span>Efficiency</span> and <span>Ease</span></h1>
+                        <h1 class="hero2">And You are 90% Done</h1>
+
+                        <p class="hero3">Streamline your workflow, boost productivity, <br>and collaborate seamlessly
+                            with our intuitive task management platform.</p>
+
+
+
+
+                        <div class="hero-btn-x">
+                            <button class="learn-more">Learn More</button>
+                            <button class="sign-up-btn">Start for free</button>
+                        </div>
+                    </div>
+
+
+                    <!-- sign up section ********************************************************************************
+             ****************************************************************************************************-->
+
+
+
+
+
+                    <div class="sign-up" id="registerForm">
+                   
+                        <div class="sign-up-x">
+                          
+                            <div class="sign-up-hero-x">
+                                
+                                <h1>Taskmaster</h1>
+                                <p>Streamline your workflow, boost productivity, and collaborate seamlessly
+                                    with our intuitive task management platform.</p>
+
+                            </div>
+                            <div class="sign-up-form">
+                                <button class="cancel-btn" id="form-cancel-btn"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
+                                    width="40px" fill="grey">
+                                    <path
+                                        d="m332-285.33 148-148 148 148L674.67-332l-148-148 148-148L628-674.67l-148 148-148-148L285.33-628l148 148-148 148L332-285.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z" />
+                                </svg></button>
+                                <h1><span>Sign up for</span> Free</h1>
+                                <form id="registerFormElement" class="form">
+                                    <div class="sign-up-name-x">
+                                        <label for="firstname">First Name</label>
+                                        <input type="text" name="firstname" id="firstname" class="first-name"
+                                            placeholder="First Name">
+                                    </div>
+
+                                    <div class="sign-up-name-x">
+                                        <label for="lastname">Last Name</label>
+                                        <input type="text" name="lastname" id="lastname" class="last-name"
+                                            placeholder="Username">
+                                    </div>
+
+                                    <div class="sign-up-name-x">
+                                        <label for="Email">Email</label>
+                                        <input type="email" name="email" id="email" class="email" placeholder="Email">
+                                    </div>
+
+
+                                    <div class="password-x">
+                                        <div class="sign-up-name-x">
+                                            <label for="password">Password</label>
+                                            <input type="password" name="password" class="password" id="password">
+                                        </div>
+
+                                        <div class="sign-up-name-x">
+                                            <label for="password2">Confirm Password</label>
+                                            <input type="password" name="confirmpassword" id="password2"
+                                                class="confirm-password">
+                                        </div>
+                                    </div>
+
+                                    <button type="submit" class="form-sign-up-btn">Sign up</button>
+                                </form>
+
+                                <h1 style="text-align: center; color: gray;">OR</h1>
+                                <!-- sign in with google button -->
+                                <button class="google-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                                        viewBox="0 0 48 48">
+                                        <path fill="#FFC107"
+                                            d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z">
+                                        </path>
+                                        <path fill="#FF3D00"
+                                            d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z">
+                                        </path>
+                                        <path fill="#4CAF50"
+                                            d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z">
+                                        </path>
+                                        <path fill="#1976D2"
+                                            d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z">
+                                        </path>
+                                    </svg>
+                                    Sign in with Google
+                                </button>
+                                <!-- sign in with face book button -->
+                                <button class="google-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                                        <path fill="#FFF"
+                                            d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z" />
+                                    </svg>
+                                    Sign in with Facebook
+                                </button>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <!-- login form ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++        -->
+
+                    <div class="login" id="loginForm">
+                        <div class="login-x">
+                            <div class="login-hero-x">
+                                <h1>Taskmaster</h1>
+                                <p>Welcome Back!</p>
+                            </div>
+
+                            <div class="login-form">
+                                <h1>Login</h1>
+
+                                <form id="loginFormElement">
+                                    <div class="sign-up-name-x">
+                                        <label for="Email">Email</label>
+                                        <input type="email" name="email" id="loginEmail" class="email"
+                                            placeholder="Email">
+                                    </div>
+                                    <div class="sign-up-name-x">
+                                        <label for="password">Password</label>
+                                        <input type="password" name="password" class="password" id="loginPassword">
+                                    </div>
+
+                                    <button type="submit" class="form-sign-up-btn">Login</button>
+                                    <a id="showRegisterLink">Don't have an account? Register</a>
+                                </form>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="home-section-two">
+                    <h1>Enjoy Seemless and Easy Navigation</h1>
+                    <div class="img-x">
+                        <img src="./css/images/TaskMaster.png" alt="dashboard image">
+                    </div>
+
+                </section>
+
+
+                <section class="home-section-three">
+                    <div class="section-three-title-x">
+                        <h1>Everything You Need to Stay Organized</h1>
+                        <p> Powerful features to help you manage tasks, collaborate with your team, and achieve your
+                            goals.</p>
+                    </div>
+
+
+
+                    <div class="feature-card color1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60">
+                            <path fill="black"
+                                d="M36.406 11.719c.648 0 1.172.524 1.172 1.172v24.765h1.25a1.172 1.172 0 110 2.344H1.172a1.172 1.172 0 110-2.344h1.25V24.61c0-.647.524-1.172 1.172-1.172H8.28c.648 0 1.172.525 1.172 1.172v13.047h2.344v-8.36c0-.646.524-1.171 1.172-1.171h4.687c.648 0 1.172.525 1.172 1.172v8.36h2.344V19.921c0-.647.524-1.172 1.172-1.172h4.687c.648 0 1.172.525 1.172 1.172v17.734h2.344V12.891c0-.648.524-1.172 1.172-1.172zm-1.172 2.344h-2.343v23.593h2.343V14.063zm-9.375 7.03h-2.343v16.563h2.343V21.094zm-9.375 9.376h-2.343v7.187h2.343V30.47zM7.11 25.78H4.766v11.875h2.343V25.781zM34.062 0a3.52 3.52 0 013.516 3.516 3.52 3.52 0 01-3.516 3.515c-.72 0-1.389-.217-1.947-.59l-4.073 3.055a3.52 3.52 0 01-3.355 4.567 3.496 3.496 0 01-1.514-.344l-4.689 4.688c.22.459.344.973.344 1.515a3.52 3.52 0 01-3.515 3.515 3.52 3.52 0 01-3.488-3.949l-3.45-1.724a3.503 3.503 0 01-2.438.986 3.52 3.52 0 01-3.515-3.516 3.52 3.52 0 013.515-3.515 3.52 3.52 0 013.488 3.949l3.45 1.725a3.503 3.503 0 013.952-.643l4.689-4.688a3.496 3.496 0 01-.344-1.515 3.52 3.52 0 013.515-3.516c.72 0 1.39.218 1.948.59l4.073-3.054A3.52 3.52 0 0134.063 0zm-18.75 18.75c-.646 0-1.171.526-1.171 1.172 0 .646.525 1.172 1.171 1.172.647 0 1.172-.526 1.172-1.172 0-.646-.525-1.172-1.172-1.172zm-9.374-4.688c-.647 0-1.172.526-1.172 1.172 0 .646.525 1.172 1.171 1.172.647 0 1.172-.526 1.172-1.172 0-.646-.525-1.171-1.171-1.171zm18.75-4.687c-.647 0-1.172.526-1.172 1.172 0 .646.525 1.172 1.172 1.172.646 0 1.171-.526 1.171-1.172 0-.646-.525-1.172-1.172-1.172zm9.375-7.031c-.647 0-1.172.526-1.172 1.172 0 .646.525 1.171 1.172 1.171.646 0 1.171-.525 1.171-1.171s-.525-1.172-1.172-1.172z" />
+                        </svg>
+                        <h1>Task Management</h1>
+                        <p>Create, organize, and track tasks with ease. Set priorities and deadlines.</p>
+                    </div>
+
+                    <div class="feature-card color2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40">
+                            <path fill="black"
+                                d="M19.968 0c11.01 0 19.969 8.958 19.969 19.968s-8.958 19.969-19.969 19.969C8.958 39.937 0 30.979 0 19.968 0 8.958 8.958 0 19.968 0zm7.805 35.579c-4.863-2.402-10.746-2.402-15.609 0a17.339 17.339 0 007.804 1.862 17.34 17.34 0 007.805-1.862zm-6.556-33.02V6.24H18.72V2.56a17.362 17.362 0 00-9.492 3.656l2.798 2.797-1.765 1.765L7.373 7.89a17.41 17.41 0 00-4.678 9.582h4.793v2.497H2.496c0 5.805 2.857 10.943 7.227 14.122 6.217-3.714 14.274-3.714 20.49 0 4.37-3.179 7.228-8.317 7.228-14.123h-4.992v-2.496h4.793a17.41 17.41 0 00-4.678-9.582l-2.888 2.888-1.765-1.765 2.798-2.797a17.362 17.362 0 00-9.492-3.657zm-2.437 8.292c.332-1.034 2.045-1.034 2.377 0 .635 1.978 3.804 11.955 3.804 14.11a4.997 4.997 0 01-4.993 4.992 4.997 4.997 0 01-4.992-4.992c0-2.155 3.17-12.132 3.804-14.11zm1.188 4.567c-1.233 4.047-2.496 8.522-2.496 9.543a2.5 2.5 0 002.496 2.496 2.5 2.5 0 002.497-2.496c0-1.02-1.263-5.496-2.497-9.543z" />
+                        </svg>
+                        <h1>Team Collaboration</h1>
+                        <p>Work together seamlessly with real-time updates and communication.</p>
+                    </div>
+
+                    <div class="feature-card color3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+                            <path fill="black"
+                                d="M46.608 6.02a.975.975 0 00-.927-.047l-7.624 3.591a8.283 8.283 0 00-4.728 6.837l-.196 2.436-3.95 6.561v-2.801c0-.01-.006-.017-.006-.027a.974.974 0 00-.046-.284l-1.838-5.514 3.753-7.504a.984.984 0 00-.099-1.03l-5.9-7.867a1.019 1.019 0 00-1.573 0L17.573 8.24a.984.984 0 00-.093 1.03l3.753 7.503-1.838 5.514a.974.974 0 00-.047.284v3.951l-6.127-9.299c-.007-.01-.02-.017-.026-.026a.995.995 0 00-.211-.215c-.02-.013-.036-.03-.056-.042-.02-.013-.022-.02-.035-.027l-3.605-2.085-1.497-2.271L5.628 9.27a.983.983 0 00-1.147-.386L.654 10.227a.983.983 0 00-.491 1.468l2.705 4.107 1.492 2.27.492 4.137a.36.36 0 00.01.04c.004.02.009.041.015.061a.973.973 0 00.116.295c.007.01.007.023.014.033.007.01 14.624 22.165 14.695 22.225A4.87 4.87 0 0024.255 48c.4 0 .8-.05 1.19-.145a4.886 4.886 0 003.028-2.235l13.08-21.698 2.065-1.307a8.343 8.343 0 002.66-2.721 8.259 8.259 0 001.18-4.651l-.383-8.42a.984.984 0 00-.467-.803zm-7.122 17.524l-1.522 2.527-5.054-3.048 1.524-2.527 5.052 3.048zM21.315 38.446V23.58h5.9v5.08l-5.9 9.786zm1.693-20.766h2.515l1.31 3.933h-5.136l1.31-3.933zm1.257-6.885a.983.983 0 110-1.966.983.983 0 010 1.966zm0-8.194l4.75 6.331-3.39 6.78h-.377v-3.13a2.95 2.95 0 10-1.966 0v3.13h-.376l-3.39-6.78 4.75-6.331zM10.53 17.818l-.29.19-3.621 2.387-.333-2.787a.982.982 0 00-.156-.424l-1.081-1.642L6.69 14.46l1.081 1.642a.988.988 0 00.329.31l2.429 1.406zm-6.122-6.826l1.2 1.822-1.642 1.082-1.475-2.232 1.917-.672zm5.249 9.755l2.458-1.624 7.233 10.972v10.726L7.193 22.371l2.464-1.624zm17.135 23.851a2.95 2.95 0 11-5.052-3.048l7.425-12.315h.017v-.027l2.712-4.499 2.527 1.526 2.53 1.52-10.16 16.843zm17.807-25.724a6.353 6.353 0 01-2.028 2.073l-1.747 1.107-2.852-1.717-2.852-1.717.162-2.065a6.318 6.318 0 013.604-5.213L45.18 8.38l.125 2.74a.973.973 0 00-.295.014l-2.382.59a5.986 5.986 0 00-4.425 4.524.983.983 0 001.919.43 4.032 4.032 0 012.977-3.043l2.297-.57.103 2.262a6.304 6.304 0 01-.9 3.548z" />
+                        </svg>
+                        <h1>Progress Tracking</h1>
+                        <p>Monitor project progress with intuitive charts and analytics.</p>
+                    </div>
+
+                    <div class="feature-card color4">
+                        <h1>Security</h1>
+                        <p>"Enterprise-grade security to keep your data safe and protected.</p>
+                    </div>
+                </section>
+
+                <section class="home-section-four">
+                    <div class="section-four-title">
+                        <h1>What Our Users Say</h1>
+                        <p>Trusted by thousands of teams worldwide</p>
+                    </div>
+
+                    <div class="testimony-x">
+                        <div class="testimony-card">
+                            <div class="svg-x">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960"
+                                    width="35px" fill="#F19E39">
+                                    <path
+                                        d="m626.67-258-39-166.67 129-112-170-15L480-709v362l146.67 89ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960"
+                                    width="35px" fill="#F19E39">
+                                    <path
+                                        d="m626.67-258-39-166.67 129-112-170-15L480-709v362l146.67 89ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960"
+                                    width="35px" fill="#F19E39">
+                                    <path
+                                        d="m626.67-258-39-166.67 129-112-170-15L480-709v362l146.67 89ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                                </svg>
+                            </div>
+
+                            <p>TASKMASTER has transformed how our team collaborates. It's incredibly intuitive and
+                                powerful.</p>
+                            <h3>Sarah Jones</h3>
+                            <p>CEO homeMade</p>
+                        </div>
+
+
+                        <div class="testimony-card">
+                            <div class="svg-x">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960"
+                                    width="35px" fill="#F19E39">
+                                    <path
+                                        d="m626.67-258-39-166.67 129-112-170-15L480-709v362l146.67 89ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960"
+                                    width="35px" fill="#F19E39">
+                                    <path
+                                        d="m626.67-258-39-166.67 129-112-170-15L480-709v362l146.67 89ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960"
+                                    width="35px" fill="#F19E39">
+                                    <path
+                                        d="m626.67-258-39-166.67 129-112-170-15L480-709v362l146.67 89ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
+                                </svg>
+                            </div>
+
+                            <p>TASKMASTER has transformed how our team collaborates. It's incredibly intuitive and
+                                powerful.</p>
+                            <h3>Alex Deckson</h3>
+                            <p>CEO Giratee</p>
+                        </div>
+
+                    </div>
+
+                </section>
+                <footer>
+
+                    <div class="footer-content-x">
+                        <h1>Taskmaster</h1>
+
+                        <div>
+                            <h3>Product</h3>
+                            <ul>
+                                <li><a href="#" class="link">Features</a></li>
+                                <li><a href="#" class="link">Pricing</a></li>
+                                <li><a href="#" class="link">Security</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Company</h3>
+                            <ul>
+                                <li><a href="#" class="link">About</a></li>
+                                <li><a href="#" class="link">Careers</a></li>
+                                <li><a href="#" class="link">Blog</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Resources</h3>
+                            <ul>
+                                <li><a href="#" class="link">Documentation</a></li>
+                                <li><a href="#" class="link">Help Center</a></li>
+                                <li><a href="#" class="link">Guides</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 className="text-white font-semibold mb-4">Contact</h3>
+                            <ul className="space-y-2">
+                                <li><a href="#" class="link">Support</a></li>
+                                <li><a href="#" class="link">Sales</a></li>
+                                <li><a href="#" class="link">Partners</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+                    <div class="copy-right-x">
+                        <p>&copy; 2024 TaskFlow. All rights reserved.</p>
+                        <div>
+                            <a href="#" class="link">Privacy</a>
+                            <a href="#" class="link">Terms</a>
+                        </div>
+                    </div>
+                </footer>
+            </main>
+
+
+
+
+
+
+
+        </section>
+
+        <!-- Register Page -->
+        <div id="register-page" class="page register-page">
+
+            <h2>Create an Account</h2>
+            <div id="register-error" class="error-message"></div>
+            <form id="register-form">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" name="password" required>
+                </div>
+                <button type="submit" class="btn">Register</button>
+            </form>
+
+            <!-- task page ***************************************************************************************** -->
+            <!-- 
+            <section class="task-page page2" id="task-page">
+
+                <main class="taskmaster-main" id="main-dashboard">
+
+                    <div class="tasks-content" id="tasks-contents">
+
+                        <div class="todo-x" id="todo-x">
+
+                        </div>
+                        <div class="inprogress-x" id="inprogress-x"></div>
+                        <div class="completed-x" id="completed-x"></div>
+                    </div>
+
+                </main>
+
+            </section> -->
+        </div>
+
+        <!-- Dashboard Page -->
+        <div id="dashboard-page" class="page">
+
+            <main class="taskmaster-main" id="app-main">
+                <section class="tool-bar">
+                    <div class="user-image-x">
+                        <h1 class="first-letter"></h1>
+                        <!-- <img src="" alt="user image"> -->
+                        <h2 class="username">username</h2>
+
+                        <button class="open-setting-btn" id="open-setting-btn"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="10" height="7">
+                                <path fill="none" stroke="white" stroke-width="2" d="M1 1l4 4 4-4" />
+                            </svg></button>
+                    </div>
+
+
+
+                    <div class="setting" id="setting">
+                        <h2>Settings</h2>
+                        <ul>
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Account</a></li>
+                            <li><a id="logout">Logout</a></li>
+                        </ul>
+                    </div>
+                    <div class="search-add-btn-x">
+
+                        <div class="search-x">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#5f6368">
+                                <path
+                                    d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+                            </svg>
+                            <input type="search" class="search-input" placeholder="Search">
+                            <!-- <button class="search-btn">
+                       </button> -->
+                        </div>
+                        <button class="add-task-btn">
+                            + Add New task
+                        </button>
+                    </div>
+
+
+
+
+                    <!-- add task form *******************************************************************************************-->
+
+                    <section class="taskmaster-form-x">
+                        <form id="addTask">
+                            <h1>Add New Task</h1>
+                            <div>
+                                <label for="task-title">Title</label>
+                                <input type="text" class="task-title" id="task-title" name="task-title" required>
+                            </div>
+                            <div>
+                                <label for="task-description">Description</label>
+                                <!-- <input type="text" class="task-description" id="task-description" name="task-description" required > -->
+                                <textarea class="task-description" id="task-description" name="task-description"
+                                    required></textarea>
+                            </div>
+                            <label for="subtask" style="margin-bottom: -30px;">Subtasks</label>
+                            <!-- subtask input -->
+                            <div class="subtask" id="sub-task-x">
+
+
+
+                            </div>
+                            <button class="subtask-btn" id="add-subtask-btn">+ Add New Subtask</button>
+
+                            <div class="status-priority-x">
+                                <div class="task-input-status-x">
+                                    <label for="status">Status</label>
+                                    <select name="task-input-status" class="task-input-status" id="task-status-input">
+                                        <option value="to-do" >Todo</option>
+                                        <option value="in-progress">In-Progress</option>
+                                        <option value="completed">Completed</option>
+                                    </select>
+                                </div>
+
+                                <div class="task-input-status-x">
+                                    <label for="status">Priority</label>
+                                    <select name="task-input-status" class="task-input-status" id="task-priority-input">
+                                        <option value="low" selected>Low</option>
+                                        <option value="medium">Medium</option>
+                                        <option value="high">High</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+                            <input type="datetime-local" name="duedate" id="task-duedate" class="task-duedate">
+
+
+
+                            <button type="submit" class="submit-btn">Create Task</button>
+
+                        </form>
+                    </section>
+
+                </section>
+
+                <!-- side bar ********************************************** -->
+                <section class="side-bar-content-x">
+                    <aside class="side-bar">
+                        <div class="side-bar-btn-x">
+
+                            <button class="side-bar-home-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#5f6368">
+                                    <path
+                                        d="M480-512ZM160-160v-391.67l-80 61-39.67-53 439.67-337L920-544l-40 53.33-400-306-253.33 194v376h168V-160H160Zm446.33 80L446.67-240l46.66-47.67 113 113.67 227-226L880-353 606.33-80Z" />
+                                </svg>
+                                Home
+                            </button>
+
+                            <button class="side-bar-dashboard-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#5f6368">
+                                    <path
+                                        d="M120-840h320v320H120v-320Zm80 80v160-160Zm320-80h320v320H520v-320Zm80 80v160-160ZM120-440h320v320H120v-320Zm80 80v160-160Zm440-80h80v120h120v80H720v120h-80v-120H520v-80h120v-120Zm-40-320v160h160v-160H600Zm-400 0v160h160v-160H200Zm0 400v160h160v-160H200Z" />
+                                </svg>
+                                Dashboard
+                            </button>
+                            <button class="side-bar-task-btn" id="task-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#5f6368">
+                                    <path
+                                        d="m438-240 226-226-58-58-169 169-84-84-57 57 142 142ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80H240Zm280-520v-200H240v640h480v-440H520ZM240-800v200-200 640-640Z" />
+                                </svg>
+                                Tasks
+                            </button>
+                            <button class="side-bar-calender-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#5f6368">
+                                    <path
+                                        d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm80 240v-80h400v80H280Zm0 160v-80h280v80H280Z" />
+                                </svg>
+                                Calender
+                            </button>
+
+                        </div>
+
+
+                        <div class="theme-x">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#5f6368">
+                                <path
+                                    d="M440-760v-160h80v160h-80Zm266 110-55-55 112-115 56 57-113 113Zm54 210v-80h160v80H760ZM440-40v-160h80v160h-80ZM254-652 140-763l57-56 113 113-56 54Zm508 512L651-255l54-54 114 110-57 59ZM40-440v-80h160v80H40Zm157 300-56-57 112-112 29 27 29 28-114 114Zm283-100q-100 0-170-70t-70-170q0-100 70-170t170-70q100 0 170 70t70 170q0 100-70 170t-170 70Zm0-80q66 0 113-47t47-113q0-66-47-113t-113-47q-66 0-113 47t-47 113q0 66 47 113t113 47Zm0-160Z" />
+                            </svg>
+                        </div>
+
+                    </aside>
+
+
+
+
+                    <!-- dashboard-section*********************************************************************************************************************************************************** -->
+                    <section class="dashboard-content-x " id="page2-container">
+
+                        <section class="page2" id="dashboard">
+                            <div class="dashboard-top-x ">
+                                <div class="name-salutation-x">
+                                    <h1 class="dashboard-name">Hi! Famous Sunday</h1>
+                                    <h3 class="dashboard-salutation">Good Afternoon</h3>
+                                </div>
+
+                            </div>
+                            <div class="card-x">
+                                <div class="dashboard-total-task-x card">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
+                                        width="40px" fill="#000000">
+                                        <path
+                                            d="M230.67-160q-29.67 0-50.17-20.5T160-230.67q0-29.66 20.5-50.16 20.5-20.5 50.17-20.5 29.66 0 50.16 20.5 20.5 20.5 20.5 50.16 0 29.67-20.5 50.17T230.67-160ZM480-160q-29.67 0-50.17-20.5t-20.5-50.17q0-29.66 20.5-50.16 20.5-20.5 50.17-20.5t50.17 20.5q20.5 20.5 20.5 50.16 0 29.67-20.5 50.17T480-160Zm249.33 0q-29.66 0-50.16-20.5-20.5-20.5-20.5-50.17 0-29.66 20.5-50.16 20.5-20.5 50.16-20.5 29.67 0 50.17 20.5t20.5 50.16q0 29.67-20.5 50.17T729.33-160ZM230.67-409.33q-29.67 0-50.17-20.5T160-480q0-29.67 20.5-50.17t50.17-20.5q29.66 0 50.16 20.5 20.5 20.5 20.5 50.17t-20.5 50.17q-20.5 20.5-50.16 20.5Zm249.33 0q-29.67 0-50.17-20.5T409.33-480q0-29.67 20.5-50.17t50.17-20.5q29.67 0 50.17 20.5t20.5 50.17q0 29.67-20.5 50.17T480-409.33Zm249.33 0q-29.66 0-50.16-20.5-20.5-20.5-20.5-50.17t20.5-50.17q20.5-20.5 50.16-20.5 29.67 0 50.17 20.5T800-480q0 29.67-20.5 50.17t-50.17 20.5ZM230.67-658.67q-29.67 0-50.17-20.5T160-729.33q0-29.67 20.5-50.17t50.17-20.5q29.66 0 50.16 20.5 20.5 20.5 20.5 50.17 0 29.66-20.5 50.16-20.5 20.5-50.16 20.5Zm249.33 0q-29.67 0-50.17-20.5t-20.5-50.16q0-29.67 20.5-50.17T480-800q29.67 0 50.17 20.5t20.5 50.17q0 29.66-20.5 50.16-20.5 20.5-50.17 20.5Zm249.33 0q-29.66 0-50.16-20.5-20.5-20.5-20.5-50.16 0-29.67 20.5-50.17t50.16-20.5q29.67 0 50.17 20.5t20.5 50.17q0 29.66-20.5 50.16-20.5 20.5-50.17 20.5Z" />
+                                    </svg>
+                                    <p>Total Task</p>
+                                    <h1 class="dashboard-total-task" id="dashboard-task-count">00</h1>
+                                </div>
+
+                                <div class="dashboard-completed-task-x card">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
+                                        width="40px" fill="#000000">
+                                        <path
+                                            d="M120-120v-77.33L186.67-264v144H120Zm163.33 0v-237.33L350-424v304h-66.67Zm163.34 0v-304l66.66 67.67V-120h-66.66ZM610-120v-236.33L676.67-423v303H610Zm163.33 0v-397.33L840-584v464h-66.67ZM120-346.33v-94.34l280-278.66 160 160L840-840v94.33L560-465 400-625 120-346.33Z" />
+                                    </svg>
+                                    <p>Completed Task</p>
+                                    <h1 class="dashboard-completed-task" id="dashboard-completed-task">00</h1>
+                                </div>
+
+                                <div class="dashboard-progress-task-x card">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
+                                        width="40px" fill="#000000">
+                                        <path
+                                            d="M130.67-220 80-270.67l300-300L540-410l293.33-330L880-694 540-310 380-469.33 130.67-220Z" />
+                                    </svg>
+                                    <p>Task In Progress</p>
+                                    <h1 class="dashboard-progress-task" id="dashboard-progress-task">00</h1>
+                                </div>
+
+                                <div class="dashboard-overdue-task-x card">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
+                                        width="40px" fill="#000000">
+                                        <path
+                                            d="M320-200q-117 0-198.5-81.5T40-480q0-117 81.5-198.5T320-760q33 0 63.83 7.33 30.84 7.34 58.17 21-14.33 11.34-26.67 24.17-12.33 12.83-24 26.83-16.66-6-34.5-9.33-17.83-3.33-36.83-3.33-88.33 0-150.83 62.16Q106.67-569 106.67-480q0 88.33 62.5 150.83 62.5 62.5 150.83 62.5 19 0 36.83-3.33 17.84-3.33 34.5-9.33 11.67 14 24 26.83 12.34 12.83 26.67 24.17-27.33 13.66-58.17 21Q353-200 320-200Zm320 0q-33 0-63.83-7.33-30.84-7.34-58.17-21 14.33-11.34 26.67-24.17 12.33-12.83 24-26.83 17 6 34.66 9.33 17.67 3.33 36.67 3.33 89 0 151.17-62.5 62.16-62.5 62.16-150.83 0-89-62.16-151.17Q729-693.33 640-693.33q-19 0-36.67 3.33-17.66 3.33-34.66 9.33-11.67-14-24-26.83-12.34-12.83-26.67-24.17 27.33-13.66 58.17-21Q607-760 640-760q117 0 198.5 81.5T920-480q0 117-81.5 198.5T640-200Zm-160-50q-57-39-88.5-100T360-480q0-69 31.5-130T480-710q57 39 88.5 100T600-480q0 69-31.5 130T480-250Z" />
+                                    </svg>
+                                    <p>Overdue Task</p>
+                                    <h1 class="dashboard-overdue-task" id="dashboard-overdue-task">00</h1>
+                                </div>
+                            </div>
+
+
+                            <div class="recent-upcoming-x">
+                                <div class="recent-task" id="recent-task">
+                                    <h3>Recently Added Task</h3>
+
+                                </div>
+
+                                <div class="upcoming-task">
+                                    <h1>Up Coming Tasks</h1>
+
+                                </div>
+                            </div>
+
+
+
+
+                        </section>
+
+                        <!-- task-page*********************************************************** -->
+
+
+                        <section class="page2" id="tasks">
+
+                            <!-- <main class="taskmaster-main" id="main-dashboard"> -->
+
+                            <div class="tasks-content" id="tasks-contents">
+
+                                <div class="todo-x" id="todo-x"></div>
+                                <div class="inprogress-x" id="inprogress-x"></div>
+                                <div class="completed-x" id="completed-x">
+
+                                </div>
+                            </div>
+
+                            <!-- </main> -->
+
+                        </section>
+
+
+                        <!-- single Task -->
+
+
+
+                    </section>
+
+        </div>
+        <section class="single-task-x hidden" id="single-task-x">
+            <button class="single-task-close-btn" id="single-task-close-btn">close</button>
+
+            <section class="single-container" id="single-task-display">
+                <div class="single-title-x">
+                    <h1 class="single-title" id="single-title">This is a single task title</h1>
+                </div>
+                <div class="desc-x">
+                    <p id="single-desc">this is a single task description</p>
+                </div>
+
+                <!-- <div class="due-date-priority-x">
+                    <div class="due-date-priority-titles-x">
+
+
+
+                    </div> -->
+                <div class="due-date-priority">
+
+                    <div class="due-date-x">
+                        <h3>Due date</h3>
+                        <h2 class="due-date" id="single-due-date">34/55/2020</h2>
+                    </div>
+
+                    <div class="priority-x">
+                        <h3>Priority</h3>
+                        <h2 class="priority" id="single-priority">Priority</h2>
+                    </div>
+
+                    <div class="status-x">
+                        <h3>status</h3>
+                        <h2 class="status" id="single-status">Medium</h2>
+                    </div>
+
+                </div>
+                </div>
+
+
+                <div class="single-subtask-x" id="single-subtask-x">
+
+                    <!-- <h1 class="subtask-title" id="subtask-title">Subtask</h1> -->
+                </div>
+
+
+                <div class="createdby-x">
+                    <h3 class="createdby" id="single-createdby">CreatedBy:</h3>
+                    <h3 class="updatedby" id="single-updatedat">Updated last:</h>
+                </div>
+
+            </section>
+
+            <section class="single-edition-form-x single-container hidden" id="single-edition-form-x">
+                <form id="edit-form">
+                    <div class="single-title-x">
+                        <input type="text" name="title" id="single-title-input" class="single-title"
+                            placeholder="This is a single task title">
+                    </div>
+
+                    <div class="desc-x">
+                        <textarea name="description" id="single-desc-input">this is a single task description</textarea>
+                    </div>
+                    <div class="due-date-priority-x">
+                        <div class="due-date-priority-titles-x">
+
+
+                            <!-- <h2>status</h2> -->
+                        </div>
+                        <div class="due-date-priority">
+                            <div class="due-date-x">
+                                <h3>Due date</h3>
+                                <input type="datetime-local" class="due-date" id="single-duedate-input">
+
+                            </div>
+                            <div class="status-x">
+                                <h3>Priority</h3>
+                                <select class="priority" id="single-priority-input">
+                                    <option value="low">Low</option>
+                                    <option value="medium">Medium</option>
+                                    <option value="high">High</option>
+
+                                </select>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="single-subtask-x" id="single-subtask-input-x">
+                        <h1 class="subtask-title" id="subtask-title">Subtask</h1>
+                    </div>
+
+
+                </form>
+
+
+            </section>
+
+
+
+            <div class="del-edit-btn-x">
+                <button type="submit" class="edit-save hidden" id="save-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                        fill="#ffffff">
+                        <path d="M379.33-244 154-469.33 201.67-517l177.66 177.67 378.34-378.34L805.33-670l-426 426Z" />
+                    </svg>
+                </button>
+                <button class="edit-btn" id="edit-btn"><svg xmlns="http://www.w3.org/2000/svg" height="27px"
+                        viewBox="0 -960 960 960" width="27px" fill="#ffffff">
+                        <path
+                            d="M160-406.67v-66.66h293.33v66.66H160ZM160-570v-66.67h460V-570H160Zm0-163.33V-800h460v66.67H160ZM520-160v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q8.67 9 12.83 20 4.17 11 4.17 22t-4.33 22.5q-4.34 11.5-13.28 20.5L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+                    </svg></button>
+                <button class="del-btn" id="del-btn"><svg xmlns="http://www.w3.org/2000/svg" height="27px"
+                        viewBox="0 -960 960 960" width="27px" fill="#ffffff">
+                        <path
+                            d="m366-299.33 114-115.34 114.67 115.34 50-50.67-114-115.33 114-115.34-50-50.66L480-516 366-631.33l-50.67 50.66L430-465.33 315.33-350 366-299.33ZM267.33-120q-27 0-46.83-19.83-19.83-19.84-19.83-46.84V-740H160v-66.67h192V-840h256v33.33h192V-740h-40.67v553.33q0 27-19.83 46.84Q719.67-120 692.67-120H267.33Zm425.34-620H267.33v553.33h425.34V-740Zm-425.34 0v553.33V-740Z" />
+                    </svg></button>
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>
