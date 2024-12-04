@@ -15,6 +15,13 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
   },
+  
+    "routes": [
+      { "handle": "filesystem" },
+      { "src": "/(.*)", "dest": "/index.html" }
+    ],
+  
+  
   "keywords": [],
   "author": "",
   "license": "ISC",
